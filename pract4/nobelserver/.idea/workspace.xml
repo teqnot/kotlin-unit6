@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa7a12da-f285-4456-9c74-350a0e9e4d89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/NobelApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/data/model/NobelPrizeResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/data/network/KtorClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/data/network/NobelApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/data/repository/NobelRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/domain/model/NobelLaureate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/domain/repository/NobelRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/domain/usecase/GetLaureateDetailUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/domain/usecase/GetLaureateUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/navigation/NobelNavGraph.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/ui/components/ErrorView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/ui/components/FilterBar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/ui/components/LaureateListItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/ui/screens/LaureateDetailScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/ui/screens/LaureateListScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract2/app/src/main/java/com/example/nobellaureates/presentation/viewmodel/NobelViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/model/LoginRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/model/LoginResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/model/UserDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/network/AuthApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/network/KtorClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/preferences/TokenPreferences.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/data/repository/AuthRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/repository/AuthRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/usecase/GetUserDetailUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/usecase/GetUsersUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/usecase/LoginUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/domain/usecase/LogoutUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/navigation/AuthNavGraph.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/ui/components/ErrorView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/ui/components/UserListItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/ui/screens/LoginScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/ui/screens/UserDetailScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/ui/screens/UserListScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pract3/app/src/main/java/com/example/authapp/presentation/viewmodel/AuthViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Application.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/datasource/InMemoryNobelDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/model/AuthResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/model/LoginRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/model/NobelPrizeDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/repository/NobelRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/model/Laureate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/model/NobelPrize.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/repository/NobelRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecase/AuthenticatedUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecase/GetLaureatesUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecase/GetPrizeByYearCategoryUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecase/GetPrizesUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/Authentication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/CallLogging.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/ContentNegotation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/Routing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/presentation/routes/AuthRoutes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/presentation/routes/PrizeRoutes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/androidTest/java/com/example/pract1/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/data/model/PhotoDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/data/network/PicsumApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/data/network/RetrofitClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/data/repository/PhotoRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/domain/model/Photo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/domain/repository/PhotoRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/domain/usecase/GetPhotosUseCase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/navigation/PhotoNavGraph.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/components/ErrorView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/components/PhotoGridItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/screens/PhotoDetailScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/screens/PhotoListScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/example/pract1/presentation/viewmodel/PhotoViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/test/java/com/example/pract1/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3EK8TgvgLiqAznlMTzj6Md9OSIN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build nobelserver.executor": "Run",
+    "Kotlin.ApplicationKt.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/teqnot/Desktop/newgold/6Sem/CSMA/unit6/pract4/nobelserver",
+    "onboarding.tips.debug.path": "/home/teqnot/Desktop/newgold/6Sem/CSMA/unit6/pract4/nobelserver/src/Main.kt"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa7a12da-f285-4456-9c74-350a0e9e4d89" name="Changes" comment="" />
+      <created>1779915911809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779915911809</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Main.kt</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
