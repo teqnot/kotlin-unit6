@@ -6,7 +6,7 @@ import com.example.domain.model.User
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
-import com.typesafe.config.Config
+import io.ktor.server.config.ApplicationConfig
 
 data class JwtConfig(
     val secret: String,
@@ -16,14 +16,14 @@ data class JwtConfig(
     val tokenValiditySeconds: Long
 ) {
     companion object {
-        fun fromConfig(config: Config): JwtConfig {
-            val authConfig = config.getConfig("auth.jwt")
+        fun fromConfig(config: ApplicationConfig): JwtConfig {
+            val authConfig = config.config("auth.jwt")
             return JwtConfig(
-                secret = authConfig.getString("secret"),
-                issuer = authConfig.getString("issuer"),
-                audience = authConfig.getString("audience"),
-                realm = authConfig.getString("realm"),
-                tokenValiditySeconds = authConfig.getLong("tokenValiditySeconds")
+                secret = authConfig.property("secret").getString(),
+                issuer = authConfig.property("issuer").getString(),
+                audience = authConfig.property("audience").getString(),
+                realm = authConfig.property("realm").getString(),
+                tokenValiditySeconds = authConfig.property("tokenValiditySeconds").getString().toLong()
             )
         }
     }
@@ -36,7 +36,6 @@ fun generateToken(user: User, jwtConfig: JwtConfig): String {
         .withIssuer(jwtConfig.issuer)
         .withAudience(jwtConfig.audience)
         .withSubject(user.username)
-        .withClaim("roles", user.roles)
         .withExpiresAt(java.util.Date(System.currentTimeMillis() + jwtConfig.tokenValiditySeconds * 1000))
         .sign(algorithm)
 }

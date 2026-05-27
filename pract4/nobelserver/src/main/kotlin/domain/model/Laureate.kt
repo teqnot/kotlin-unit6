@@ -1,9 +1,10 @@
 package com.example.domain.model
 
 data class Laureate(
-    val id: String,
-    val firstName: String,
-    val lastName: String,
-    val motivation: String,
-    val share: String = "1"
+    val id: Int? = null,
+    val prizeId: Int,
+    val fullName: String,
+    val portion: String = "1",
+    val motivation: String?,
+    val portraitUrl: String?
 )

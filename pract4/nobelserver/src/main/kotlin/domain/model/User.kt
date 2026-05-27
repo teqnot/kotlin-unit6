@@ -1,14 +1,10 @@
 package com.example.domain.model
 
 data class User(
+    val id: Int? = null,
     val username: String,
     val passwordHash: String,
-    val roles: List<String> = emptyList()
+    val roles: List<String> = listOf("user")
 ) {
-    companion object {
-        fun testUsers(): List<User> = listOf(
-            User("emilys", "emilyspass", listOf("user")),
-            User("admin", "admin123", listOf("admin", "user"))
-        )
-    }
+    val primaryRole: String get() = roles.firstOrNull() ?: "user"
 }

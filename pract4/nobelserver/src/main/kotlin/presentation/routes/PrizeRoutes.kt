@@ -8,6 +8,7 @@ import io.ktor.http.*
 import io.ktor.server.auth.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import kotlin.collections.map
 
 fun Routing.prizeRoutes(
     getPrizesUseCase: GetPrizesUseCase,
@@ -67,13 +68,13 @@ fun Routing.prizeRoutes(
                     return@get
                 }
 
-                call.respond(HttpStatusCode.OK, laureates.map {
+                call.respond(HttpStatusCode.OK, laureates.map { laureate ->
                     mapOf(
-                        "id" to it.id,
-                        "firstName" to it.firstName,
-                        "lastName" to it.lastName,
-                        "motivation" to it.motivation,
-                        "share" to it.share
+                        "id" to (laureate.id ?: 0),
+                        "fullName" to laureate.fullName,
+                        "portion" to laureate.portion,
+                        "motivation" to laureate.motivation,
+                        "portraitUrl" to laureate.portraitUrl
                     )
                 })
 

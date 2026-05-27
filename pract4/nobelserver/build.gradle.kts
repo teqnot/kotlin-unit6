@@ -9,7 +9,15 @@ group = "com.example"
 version = "1.0.0-SNAPSHOT"
 
 application {
-    mainClass = "io.ktor.server.netty.EngineMain"
+    mainClass.set("com.example.ApplicationKt")
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs("src/main/resources")
+        }
+    }
 }
 
 kotlin {
@@ -30,6 +38,24 @@ dependencies {
 
     implementation("io.ktor:ktor-server-content-negotiation-jvm:2.3.6")
     implementation("io.ktor:ktor-server-call-logging-jvm:2.3.6")
+
+    implementation("io.ktor:ktor-server-swagger-jvm:2.3.6")
+
+    implementation("org.jetbrains.exposed:exposed-core:0.43.0")
+    implementation("org.jetbrains.exposed:exposed-dao:0.43.0")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.43.0")
+    implementation("org.jetbrains.exposed:exposed-java-time:0.43.0")
+    implementation("org.postgresql:postgresql:42.6.0")
+    implementation("com.zaxxer:HikariCP:5.0.1")
+
+    implementation("org.flywaydb:flyway-core:9.22.3")
+
+    implementation("io.ktor:ktor-client-core-jvm:2.3.6")
+    implementation("io.ktor:ktor-client-cio-jvm:2.3.6")
+    implementation("io.ktor:ktor-client-content-negotiation-jvm:2.3.6")
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.6")
+
+    implementation("org.mindrot:jbcrypt:0.4")
 
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
