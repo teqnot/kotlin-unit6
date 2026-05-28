@@ -10,12 +10,19 @@ import kotlinx.serialization.json.Json
 
 object KtorClient {
 
-    private const val BASE_URL = "https://api.nobelprize.org/2.1/"
+    private const val BASE_URL = "http://10.0.2.2:8080"
+
+    var authToken: String? = null
 
     val instance: HttpClient by lazy {
         HttpClient(CIO) {
             defaultRequest {
                 url(BASE_URL)
+                contentType(ContentType.Application.Json)
+
+                authToken?.let { token ->
+                    headers.append("Authorization", "Bearer $token")
+                }
             }
 
             install(Logging) {

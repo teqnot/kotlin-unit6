@@ -75,7 +75,7 @@ class NobelViewModel(
                 .onSuccess { laureate ->
                     _selectedLaureate.value = laureate
                 }
-                .onFailure { /* можно показать ошибку */ }
+                .onFailure {  }
         }
     }
 
@@ -85,5 +85,47 @@ class NobelViewModel(
 
     fun retry() {
         loadLaureates()
+    }
+
+    private fun checkSavedAuth() {
+        viewModelScope.launch {
+            tokenPreferences.tokenFlow.collect { token ->
+                if (!token.isNullOrBlank()) {
+                    _uiState.value = AuthUiState.Success("user")
+                }
+            }
+        }
+    }
+
+    fun login(username: String, password: String) {
+        viewModelScope.launch {
+            _uiState.value = AuthUiState.Loading
+
+            AuthApi.login(username, password)
+                .onSuccess { response ->
+                    tokenPreferences.saveToken(response.accessToken)
+                    tokenPreferences.saveUsername(response.user.username)
+
+                    _uiState.value = AuthUiState.Success(response.user.username)
+                }
+                .onFailure { error ->
+                    _uiState.value = AuthUiState.Error(
+                        when {
+                            error.message?.contains("401") == true -> "Неверный логин или пароль"
+                            error.message?.contains("timeout") == true -> "Превышено время ожидания"
+                            error.message?.contains("Connection") == true -> "Нет соединения с сервером"
+                            else -> "Ошибка: ${error.message}"
+                        }
+                    )
+                }
+        }
+    }
+
+    fun logout() {
+        viewModelScope.launch {
+            AuthApi.logout()
+            tokenPreferences.clearAuth()
+            _uiState.value = AuthUiState.Idle
+        }
     }
 }

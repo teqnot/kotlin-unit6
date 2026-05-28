@@ -7,23 +7,50 @@ import io.ktor.client.request.get
 
 object NobelApi {
 
-    suspend fun getLaureates(filter: NobelFilter): Result<LaureatesResponse> {
+    suspend fun getPrizes(filter: NobelFilter): Result<PrizesResponse> {
         return try {
-            val response = KtorClient.instance.get("laureates") {
+            val response: HttpResponse = KtorClient.instance.get("prizes") {
                 url {
-                    parameters.append("limit", "100")
-                    parameters.append("offset", "0")
-
-                    filter.year?.let { parameters.append("nobelPrizeYear", it.toString()) }
-                    if (filter.category != com.example.nobellaureates.domain.model.NobelCategory.ALL) {
-                        parameters.append("nobelPrizeCategory", filter.category.apiValue)
-                    }
                 }
             }
 
-            Result.success(response.body<LaureatesResponse>())
+            if (response.status == HttpStatusCode.OK) {
+                Result.success(response.body<PrizesResponse>())
+            } else {
+                Result.failure(Exception("Ошибка загрузки премий: ${response.status}"))
+            }
         } catch (e: Exception) {
-            android.util.Log.e("NobelApi", "API Error: ${e.message}", e)
+            android.util.Log.e("NobelApi", "Get prizes error: ${e.message}", e)
+            Result.failure(e)
+        }
+    }
+
+    suspend fun getPrizeDetail(year: Int, category: String): Result<PrizeDetailResponse> {
+        return try {
+            val response: HttpResponse = KtorClient.instance.get("prizes/$year/$category")
+
+            if (response.status == HttpStatusCode.OK) {
+                Result.success(response.body<PrizeDetailResponse>())
+            } else {
+                Result.failure(Exception("Prize not found: ${response.status}"))
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("NobelApi", "Get prize detail error: ${e.message}", e)
+            Result.failure(e)
+        }
+    }
+
+    suspend fun getLaureates(year: Int, category: String): Result<List<LaureateResponse>> {
+        return try {
+            val response: HttpResponse = KtorClient.instance.get("prizes/$year/$category/laureates")
+
+            if (response.status == HttpStatusCode.OK) {
+                Result.success(response.body())
+            } else {
+                Result.failure(Exception("Laureates not found: ${response.status}"))
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("NobelApi", "Get laureates error: ${e.message}", e)
             Result.failure(e)
         }
     }

@@ -26,6 +26,15 @@ class MainActivity : ComponentActivity() {
         val repository = NobelRepositoryImpl()
         val getLaureatesUseCase = GetLaureatesUseCase(repository)
         val getLaureateDetailUseCase = GetLaureateDetailUseCase(repository)
+        val tokenPreferences = TokenPreferences(this)
+        val authViewModel: AuthViewModel = viewModel(
+            factory = object : ViewModelProvider.Factory {
+                override fun <T : ViewModel> create(modelClass: Class<T>): T {
+                    @Suppress("UNCHECKED_CAST")
+                    return AuthViewModel(tokenPreferences) as T
+                }
+            }
+        )
 
         setContent {
             NobelLaureatesTheme {
